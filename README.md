@@ -30,7 +30,7 @@ Run `ng serve -o` for a dev server. The app will automatically reload if you cha
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module` (use --routing with module).
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module` (use --routing with module if appropriate).
 
 ## Build
 
