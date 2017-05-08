@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Dependecies
 
-Node.js v6.9.* or above with NPM (node package manager)
-Angular CLI for code generation, building, and testing.
+* Node.js v6.9.* or above with NPM (node package manager). 
+* Angular CLI for code generation, building, and testing.
 
 ## Git
 
