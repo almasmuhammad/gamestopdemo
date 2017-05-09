@@ -1,0 +1,8 @@
+Debugger for Chrome
+Debugger for Edge
+Debugger for iOS Web
+Angular CLI
+VSCode Great Icons
+Angular 2 TypeScript Test Snippets
+Angular v4 TypesCript Snippets
+html snippets
