@@ -3,10 +3,9 @@ Why - communicate decision of tools and processes chosen and why so that future 
 This living document helps tell the story of the how and why of the front end development for the product LeveUp. Front end development combines many topics and integrates with many other processes and teams. Topics have options and tradeoffs of tools and processes. Tools may also have dependencies and versioning. In some instances, decisions may be made without the need for options. Future needs or changes may lead to a change in tool, dependency, or process. This product information allows for a shorter time to market in making a change with greater confidence in understanding dependencies as well as, possibly, the whole system.
 
 
-
 | **TOPIC** | **DISCUSSION** | **OUTCOME** |
 | --- | --- | --- |
-|   | Considering most well known tools/technology, patterns and practices  |   |
+|| Considering most well known tools/technology, patterns and practices  ||
 | Client Framework | AngularVersion 2 and 4 had minimal changes, level set of all libraries included | Angular 4, supports internationalization |
 | Dev App | Visual Studio 2017 - Pro costs, Community is freeVisual Studio Code - Free, needs host, used with Angular CLI has all needs for compiling, hosting and testing | Visual Studio Code with Angular CLI provides code generation, local dev host, minification and bundling, GitHub integration, provides internationalization support, app follows JavaScript application pattern and not ASP.Net web app Detail any plugins and/or configs used in VS Code |
 | Code Analysis | Automation of coding standards | TSLint is included with Angular CLI Determine CSS and HTML linting |
