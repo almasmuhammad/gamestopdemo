@@ -13,7 +13,7 @@ DVCS
 
 ## Version Control 
 
-GitHub 
+GitHub with VS Code, and other apps if necessary.
 
 ## Visual Studio Code and Extension
 
