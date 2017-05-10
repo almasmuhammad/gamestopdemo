@@ -2,3 +2,5 @@ Node.js                version      v6.10.2           to check version,in comman
 npm                    version      3.10.10           to check version,in command prompt type, npm -v
 Angular-CLI            version      1.0.1             to check version,in command prompt type, ng -v  
 Visual Studio Code     version      1.11.2            to check version,VSC>Help>About
+Git
+GitHub Desktop

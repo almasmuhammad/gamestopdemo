@@ -1,0 +1,84 @@
+Installation of Git:
+
+Install Git using followin link
+
+https://git-for-windows.github.io/
+
+while Git Installation ,you can select either you want to install Git Bash and Git GUI as well, as I would be installing and using GitHub Desktop so I am not icluding installation of Git Bash and Git GUI.
+
+
+Installation of GitHub Desktop:
+
+Before you set up GitHub Desktop, you must already have a GitHub or GitHub Enterprise account.
+
+Install GitHub Desktop using followin link
+
+https://desktop.github.com/
+
+
+How to use GitHub Desktop:
+
+once GitHub Desktop is Installed, open it and Log in using your Github Credentials.
+
+click on + button given at top left corner to Add,Create or Clone repositories.
+
+if you will click on Clone,you can see list of existing repositories of your Github account.
+
+select the desired repositries and click on tick provided at the bottom to make its clone. 
+
+it will ask for the location to save repository, select desired location and click ok.
+
+you can open saved repository in code editor (like VSC),as soon as you modify any file and save,it will show as notification in Source Control (third Icon from top left corner in VSC).
+
+click on + sign to stage the changes,as soon as you staged ,it will show in Changes section of GitHub Desktop,you can type Message/Description and then Commit, you can also do same from VSC too by typing the Message then press Ctrl+Enter or click on tick sign to commit the changes
+
+as soon as you commit,it will show in History of GitHub Desktop
+
+you can click on Sync button given at top right corner of GitHub Desktop to puch the local changes to the remote GitHub,you can push it to GitHub directly from VSC too.
+
+here are commands if instead of GitHub Desktop,you are using Command line .
+
+git init                             to start local repo
+
+git remote add origin "link of the repo from github"     to make clone of repository from github
+
+git pull origin master                to fetch from master branch
+
+git commit -m "message"               to commit just one file
+
+git commit -a                         to commit all files at once
+
+git add -A                            to add all files at once
+
+git log                               to get details about commits  
+
+git status                            to check status
+
+git branch branchname                 to create new branch
+
+git checkout branchname               to checking out in new branch
+
+git checkout master                   to go to master branch
+
+cat filename                          to see what modification happened
+
+ls                                    to check list of files
+
+git merge branchname                  to merge into master branch
+
+git push origin firstbranch           to push firstbranch to remote repo
+
+git push origin master                to push all the files of master branch to remote repo
+
+
+ssh-keygen
+
+........................................................
+
+git pull= git fetch+git merge
+git fetch: you have to do git merge after that
+..................................................
+rebase is another kind of merging,much cleaner project history,linear workflow
+git rebase master
+
+.............................................
