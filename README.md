@@ -1,6 +1,6 @@
 # LU.Web.Core
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
 ## Dependecies
 
@@ -13,7 +13,7 @@ DVCS
 
 ## Version Control 
 
-GitHub 
+GitHub with Github Desktop for Windows. Helps watch the Github repo while merging and testing local before committing to server. 
 
 ## Visual Studio Code and Extension
 
