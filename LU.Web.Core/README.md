@@ -1,11 +1,19 @@
-# LU.Web.Core new test
+# LU.Web.Core
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
 
 ## Dependecies
 
 Node.js v6.9.* or above with NPM (node package manager)
-Angular CLI for code generation, building, and testing. 
+Angular CLI for code generation, building, and testing.
+
+## Git
+
+DVCS
+
+## Version Control 
+
+GitHub 
 
 ## Visual Studio Code and Extension
 

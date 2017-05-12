@@ -19,7 +19,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "assets/css/primary.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/css/main.css",
+        "assets/css/header.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
