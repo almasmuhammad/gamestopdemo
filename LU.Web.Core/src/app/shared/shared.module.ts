@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { MyStuffRoutingModule } from './my-stuff-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
-    CommonModule,
-    MyStuffRoutingModule
+    CommonModule
   ],
+  exports: [CommonModule, FormsModule],
   declarations: []
 })
-export class MyStuffModule { }
+export class SharedModule { }
