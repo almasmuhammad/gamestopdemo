@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpModule } from "@angular/http";
 
-import { UserContextService } from './base/services/user-context.service';
-import { UserService } from './base/services/user.service';
+import { UserContextService } from './base/services/userContext/user-context.service';
+import { UserProfileService } from './base/services/userProfile/user-profile.service';
 import { LoggerService } from './shared/log/logger.service';
 import { WindowService } from './shared/window/window.service';
 import { environment } from '../environments/environment';
@@ -13,7 +13,7 @@ import { environment } from '../environments/environment';
   providers: [ 
     LoggerService, 
     WindowService, 
-    { provide: UserService, useClass: UserService }, 
+    { provide: UserProfileService, useClass: UserProfileService }, 
     UserContextService ]
 })
 export class AppComponent {
