@@ -18,11 +18,11 @@
       </div>
       <div class="collapse navbar-collapse" id="main-navbar">
         <ul class="nav navbar-nav">
-            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyStuff" class="siteHeaderNavigation myStuffNavigation" data-i18n="nav.my-stuff">my stuff</a></li>
-            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyTraining" class="siteHeaderNavigation myTrainingNavigation">my training</a></li>
-            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyTeam" class="siteHeaderNavigation myTeamNavigation">my team</a></li>                
-            <li><a data-toggle="collapse" data-target="#main-navbar" id="navReports" class="siteHeaderNavigation reportsNavigation" data-i18n="nav.reports">reports</a></li>
-            <li *ngIf="_userContextService.profileModel.isCreator"><a data-toggle="collapse" data-target="#main-navbar" id="navCreator" class="siteHeaderNavigation creatorNavigation" data-i18n="nav.creator">creator</a></li>
+            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyStuff" class="siteHeaderNavigation myStuffNavigation" data-i18n="nav.my-stuff">{{'my stuff'}}</a></li>
+            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyTraining" class="siteHeaderNavigation myTrainingNavigation">{{'my training'}}</a></li>
+            <li><a data-toggle="collapse" data-target="#main-navbar" id="navMyTeam" class="siteHeaderNavigation myTeamNavigation">{{'my team'}}</a></li>                
+            <li><a data-toggle="collapse" data-target="#main-navbar" id="navReports" class="siteHeaderNavigation reportsNavigation" data-i18n="nav.reports">{{'reports'}}</a></li>
+            <li *ngIf="_userContextService.profileModel.isCreator"><a data-toggle="collapse" data-target="#main-navbar" id="navCreator" class="siteHeaderNavigation creatorNavigation" data-i18n="nav.creator">{{'creator'}}</a></li>
         </ul>
       </div>
     </div>
