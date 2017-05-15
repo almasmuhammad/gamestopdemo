@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, RequestOptions, Headers } from "@angular/http";
+import { Http, Response, RequestOptions, Headers } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
 
@@ -18,18 +18,18 @@ import { WindowService } from '../window/window.service';
 @Injectable()
 export class UserProfileService {
 
-  constructor(private _http: Http, private _windowService:WindowService) {}
+  constructor(private _http: Http, private _windowService: WindowService) {}
 
-  getProfile(): Observable<ProfileModel>{
+  getProfile(): Observable<ProfileModel> {
     // set url
-    const url = environment.apiURL + 'unauth';//'profile';
+    const url = environment.apiURL + 'unauth'; // 'profile';
 
     // options
     // this could be handled by abstraction
     // should we send application/text for CORS/Preflight and only run Get and Post methods?
     // hopefully a cookie is set to hold auth
-    let headers = new Headers({ 'Content-Type': 'application/json' }); 
-    let options = new RequestOptions({ headers: headers });
+    const headers = new Headers({ 'Content-Type': 'application/json' });
+    const options = new RequestOptions({ headers: headers });
 
     // this could be handled by abstraction
     // map parms or body
@@ -37,26 +37,25 @@ export class UserProfileService {
     // map on good return
     // catch errors, log, if 401 raise event
 
-    let body = JSON.stringify({ });
+    const body = JSON.stringify({ });
 
-    let stubProfileModel = new ProfileModel();
-    let profile = Observable.of(stubProfileModel).delay(500);
+    const stubProfileModel = new ProfileModel();
+    const profile = Observable.of(stubProfileModel).delay(500);
 
-    //for sprint demo manual show only
+    // for sprint demo show only
     const returnProfileAsCreator = false;
-
     const callApiWith401 = false;
-
     const redirectToSSO = false;
-    
+
     if (returnProfileAsCreator) {
       stubProfileModel.isCreator = true;
     }
 
-    if (!callApiWith401) // remove after demo
+    if (!callApiWith401) { // remove after demo
       return profile;
-    
-    if(callApiWith401){ // remove if condition after demo
+    }
+
+    if (callApiWith401) { // remove if condition after demo
       return this._http.get(url, options)
           .map((response: Response) => {
               return <ProfileModel>response.json();
@@ -64,10 +63,11 @@ export class UserProfileService {
           .catch(e => {
               // this could be handled by abstraction
               if (e.status === 401) {
-                if (redirectToSSO)//remove after demo
+                if (redirectToSSO) { // remove after demo
                   this._windowService.redirectToSSO();
-                
-                return Observable.of(null); 
+                }
+
+                return Observable.of(null);
                 // Observable.throw('Unauthorized');
               }
 

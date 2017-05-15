@@ -1,10 +1,10 @@
-import { LU.Web.CorePage } from './app.po';
+import { CorePage } from './app.po';
 
 describe('lu.web.core App', () => {
-  let page: LU.Web.CorePage;
+  let page: CorePage;
 
   beforeEach(() => {
-    page = new LU.Web.CorePage();
+    page = new CorePage();
   });
 
   it('should display message saying app works', () => {

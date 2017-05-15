@@ -5,15 +5,15 @@ export class LoggerService {
 
   constructor() { }
 
-  logError(message:string){
-    if(message && console && console.log) {
+  logError(message: string) {
+    if (message && console && console.log) {
       console.log('Error: ' + message);
     }
   }
 
-  logInfo(message: string){
-    if(message && console && console.log) {
-      console.log('Info: '+ message);
+  logInfo(message: string) {
+    if (message && console && console.log) {
+      console.log('Info: ' + message);
     }
   }
 }

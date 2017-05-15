@@ -2,7 +2,7 @@ export class ProfileModel {
     public isCreator: boolean;
     public isAuthenticated: boolean;
 
-    constructor() { 
+    constructor() {
         this.isAuthenticated = false;
         this.isCreator = false;
     }

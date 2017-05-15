@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class LU.Web.CorePage {
+export class CorePage {
   navigateTo() {
     return browser.get('/');
   }
