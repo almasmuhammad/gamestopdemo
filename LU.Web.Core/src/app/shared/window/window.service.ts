@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 
-import { environment } from '../../../environments/environment';
+// import { environment } from '../../../environments/environment';
 
-@Injectable()
-export class WindowService {
+// @Injectable()
+// export class WindowService {
 
-  constructor() { }
+//   constructor() { }
 
-  redirectToSSO() {
-    window.location.href = environment.loginURL;
-  }
-}
+//   redirectToSSO() {
+//     window.location.href = environment.loginURL;
+//   }
+// }

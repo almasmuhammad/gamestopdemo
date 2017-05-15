@@ -1,19 +1,19 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 
-@Injectable()
-export class LoggerService {
+// @Injectable()
+// export class LoggerService {
 
-  constructor() { }
+//   constructor() { }
 
-  logError(message:string){
-    if(message && console && console.log) {
-      console.log('Error: ' + message);
-    }
-  }
+//   logError(message:string){
+//     if(message && console && console.log) {
+//       console.log('Error: ' + message);
+//     }
+//   }
 
-  logInfo(message: string){
-    if(message && console && console.log) {
-      console.log('Info: '+ message);
-    }
-  }
-}
+//   logInfo(message: string){
+//     if(message && console && console.log) {
+//       console.log('Info: '+ message);
+//     }
+//   }
+// }

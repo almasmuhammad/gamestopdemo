@@ -9,7 +9,7 @@ import { LocationStrategy,
 import { AppComponent } from './app.component';
 
 /* Feature Modules */
-import { LoggerService } from './shared/log/logger.service';
+import { LoggerService } from './base/services/log/logger.service';
 
 /* Routing Module */
 import { AppRoutingModule } from './app-routing.module';
