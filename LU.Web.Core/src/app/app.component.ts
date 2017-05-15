@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpModule } from "@angular/http";
+import { HttpModule } from'@angular/http';
 
 import { UserContextService } from './shared/services/userContext/user-context.service';
 import { UserProfileService } from './shared/services/userProfile/user-profile.service';

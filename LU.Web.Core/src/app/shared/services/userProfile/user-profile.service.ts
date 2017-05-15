@@ -22,7 +22,7 @@ export class UserProfileService {
 
   getProfile(): Observable<ProfileModel>{
     // set url
-    let url = environment.apiURL + 'unauth';//'profile';
+    const url = environment.apiURL + 'unauth';//'profile';
 
     // options
     // this could be handled by abstraction
@@ -43,16 +43,20 @@ export class UserProfileService {
     let profile = Observable.of(stubProfileModel).delay(500);
 
     //for sprint demo manual show only
-    let returnProfileAsCreator = false;
-    if (returnProfileAsCreator)
-      stubProfileModel.isCreator = true;
-    let callApiWith401 = false;
-    let redirectToSSO = false;
+    const returnProfileAsCreator = false;
 
-    if (!callApiWith401)//remove after demo
+    const callApiWith401 = false;
+
+    const redirectToSSO = false;
+    
+    if (returnProfileAsCreator) {
+      stubProfileModel.isCreator = true;
+    }
+
+    if (!callApiWith401) // remove after demo
       return profile;
     
-    if(callApiWith401){//remove if condition after demo
+    if(callApiWith401){ // remove if condition after demo
       return this._http.get(url, options)
           .map((response: Response) => {
               return <ProfileModel>response.json();
@@ -63,12 +67,12 @@ export class UserProfileService {
                 if (redirectToSSO)//remove after demo
                   this._windowService.redirectToSSO();
                 
-                return Observable.of(null);// Observable.throw('Unauthorized');
+                return Observable.of(null); 
+                // Observable.throw('Unauthorized');
               }
+
               // do any other checking for statuses here
           });
     }
   }
-
-  //protected UnauthenticatedHandler()
 }

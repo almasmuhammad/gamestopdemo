@@ -8,12 +8,14 @@ import { LoggerService } from '../log/logger.service';
 
 @Injectable()
 export class UserContextService {
-//holds profile model and refreshes profile
+// holds profile model and refreshes profile
 
  profileModel: ProfileModel = null;
 
-  constructor(private _userService: UserProfileService, private _logger: LoggerService) {
-    const svc = _userService;
+  constructor(
+    private _userService: UserProfileService, 
+    private _logger: LoggerService) {
+    
    }
 
  getProfile() : void {
