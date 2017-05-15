@@ -34,7 +34,7 @@ This will setup a working copy of LU.Web.Core on your local machine.
 
 ## Running local copy
 
-To run a local copy in development mode, execute:
+To run a local copy in development mode, execute
 
 ```bash
 npm start
