@@ -43,11 +43,11 @@ export class UserProfileService {
     let profile = Observable.of(stubProfileModel).delay(500);
 
     //for sprint demo manual show only
-    let returnProfileAsCreator = true;
+    let returnProfileAsCreator = false;
     if (returnProfileAsCreator)
       stubProfileModel.isCreator = true;
-    let callApiWith401 = true;
-    let redirectToSSO = true;
+    let callApiWith401 = false;
+    let redirectToSSO = false;
 
     if (!callApiWith401)//remove after demo
       return profile;
