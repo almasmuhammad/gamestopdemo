@@ -13,7 +13,7 @@ import 'rxjs/add/operator/delay';
 
 import { environment } from '../../../../environments/environment';
 import { ProfileModel } from '../../models/profile-model';
-import { WindowService } from '../../../shared/window/window.service';
+import { WindowService } from '../window/window.service';
 
 @Injectable()
 export class UserProfileService {
