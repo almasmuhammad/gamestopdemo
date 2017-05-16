@@ -6,3 +6,6 @@ VSCode Great Icons
 Angular 2 TypeScript Test Snippets
 Angular v4 TypesCript Snippets
 html snippets
+tslint
+Angular language service
+Path Intellisense 
