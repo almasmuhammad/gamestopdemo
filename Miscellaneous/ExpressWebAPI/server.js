@@ -36,11 +36,15 @@ app.get('/users/:id', function (req, res) {
     }
   }
 });
-app.get('/unauth',function (req, res){   
+app.get('/api/Application/Profile', function (req,res){
+  var applicationProfileViewModel = JSON.parse('{"roles":["CreatorReadx"],"languages":["en-us"]}');
+  res.json(applicationProfileViewModel);
+});
+app.get('/unauth',function (req, res){
   console.log('route request - unauth');
   res.status(401).end();});
 
-var server = app.listen(8081, function () {
+var server = app.listen(65495, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log("Example app listening at http://%s:%s", host, port);
